@@ -1,6 +1,5 @@
 'use client'
 
-import { SplineScene } from "@/components/ui/spline";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Spotlight } from "@/components/ui/spotlight"
 import { MonitorPlay, Sparkles, LayoutTemplate, Share2, ShoppingCart, Film } from "lucide-react"
@@ -52,7 +51,6 @@ export default function AgencyLandingPage() {
           />
           
           <div className="flex flex-col-reverse md:flex-row h-full">
-            {/* Sol İçerik */}
             <div className="flex-1 p-8 md:p-12 relative z-10 flex flex-col justify-center">
               <div className="inline-block px-3 py-1 mb-6 border border-neutral-700 rounded-full text-xs font-medium tracking-wide text-neutral-300 w-fit">
                 YENİ NESİL DİJİTAL AJANS
@@ -70,12 +68,16 @@ export default function AgencyLandingPage() {
               </div>
             </div>
 
-            {/* Sağ İçerik - 3D Spline */}
+            {/* Sağ İçerik - SAF HTML IFRAME ILE 3D ANIMASYON */}
             <div className="flex-1 relative min-h-[250px] md:min-h-full">
-              <SplineScene 
-                scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+              <iframe 
+                src="https://my.spline.design/kZDDjO5HuC9GJUM2/" 
+                frameBorder="0" 
+                width="100%" 
+                height="100%" 
                 className="w-full h-full object-cover"
-              />
+                title="3D Agency Animation"
+              ></iframe>
             </div>
           </div>
         </Card>
@@ -110,7 +112,7 @@ export default function AgencyLandingPage() {
         </div>
       </section>
 
-      {/* PORTFOLIO / IMAGE SECTION */}
+      {/* PORTFOLIO SECTION */}
       <section className="py-20 px-4 md:px-8 max-w-7xl mx-auto border-t border-neutral-900">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="flex-1">
@@ -134,10 +136,10 @@ export default function AgencyLandingPage() {
             </ul>
           </div>
           <div className="flex-1 relative w-full h-[400px] rounded-2xl overflow-hidden">
-           <div 
-  className="w-full h-full bg-cover bg-center opacity-80 hover:opacity-100 transition-opacity duration-500"
-  style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop)' }}
-></div>
+            <div 
+              className="w-full h-full bg-cover bg-center opacity-80 hover:opacity-100 transition-opacity duration-500"
+              style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop)' }}
+            ></div>
             <div className="absolute inset-0 bg-gradient-to-tr from-black/60 to-transparent pointer-events-none"></div>
           </div>
         </div>
