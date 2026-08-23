@@ -46,7 +46,6 @@ export default function AgencyLandingPage() {
         <Card className="w-full h-[550px] bg-black/[0.96] border-neutral-800 relative overflow-hidden rounded-3xl">
           <Spotlight
             className="-top-40 left-0 md:left-60 md:-top-20"
-            fill="white"
             size={400}
           />
           
