@@ -1,6 +1,6 @@
 'use client'
 
-import { SplineScene } from "@/components/ui/splite";
+import { SplineScene } from "@/components/ui/spline";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Spotlight } from "@/components/ui/spotlight"
 import { MonitorPlay, Sparkles, LayoutTemplate, Share2, ShoppingCart, Film } from "lucide-react"
