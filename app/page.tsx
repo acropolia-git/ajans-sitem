@@ -134,11 +134,10 @@ export default function AgencyLandingPage() {
             </ul>
           </div>
           <div className="flex-1 relative w-full h-[400px] rounded-2xl overflow-hidden">
-            <img 
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" 
-              alt="Data and Design Workspace" 
-              className="object-cover w-full h-full opacity-80 hover:opacity-100 transition-opacity duration-500"
-            />
+           <div 
+  className="w-full h-full bg-cover bg-center opacity-80 hover:opacity-100 transition-opacity duration-500"
+  style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop)' }}
+></div>
             <div className="absolute inset-0 bg-gradient-to-tr from-black/60 to-transparent pointer-events-none"></div>
           </div>
         </div>
